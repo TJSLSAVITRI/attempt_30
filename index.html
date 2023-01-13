@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container2">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>WIR</span><span>IN</span></h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home"><i class = "fa fa-home"></i>  Home</a></li>
+            <li><a href="#abc" data-after="Service"><i class = "fa fa-clone"></i>  Dataset</a>
+            <!-- <li><a href = "#"><i class = "fa fa-clone"></i>Dataset</a> -->
+              <!-- <div class = "sub_menu" id = "abc">
+                  <ul>
+                      <li><a href = "details.html">Details</a></li><br>
+                      <li><a href = "download.html">Download</a></li>
+                  </ul>
+              </div>
+              </li> -->
+            <li><a href="#projects" data-after="Projects"><i class = "fa fa-bookmark"></i>  Benchmarks</a></li>
+            <li><a href="#about" data-after="About"><i class = "fa fa-calendar"></i>  News and Events</a></li>
+            <li><a href="#contact" data-after="Contact"><i class = "fa fa-phone"></i>  Contacts</a></li>
+            <li><a href="#contact" data-after="Contact"><i class = "fa fa-user"></i>  Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container2">
+      <div>
+        <h1>National <span></span></h1>
+        <h1>Dataset <span></span></h1>
+        <!-- <h1>Law <span></span></h1> -->
+        <a href="#projects" type="button" class="cta">About us</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+  <br><br><br>
+  <div class="projects-header">
+    <h1 class="section-title">Ga<span>ll</span>ery</h1>
+  </div>
+  <section class = "slider_container">
+    <div class = "container">
+      <div class = "swiper card_slider">
+        <div class = "swiper-wrapper">
+          <!-- <div class = "swiper-slide">
+              <div class = "img_box">
+                <img src = "img/swiper_1.jpg">
+              </div>
+          </div> -->
+          <div class = "swiper-slide">
+            <div class = "img_box">
+              <img src = "img/swiper_2.png">
+            </div>
+        </div>
+        <div class = "swiper-slide">
+          <div class = "img_box">
+            <img src = "img/swiper_3.jpg">
+          </div>
+      </div>
+      <div class = "swiper-slide">
+        <div class = "img_box">
+          <img src = "img/swiper_7.png">
+        </div>
+    </div>
+    <div class = "swiper-slide">
+      <div class = "img_box">
+        <img src = "img/swiper_8.png">
+      </div>
+  </div>
+      <div class = "swiper-slide">
+        <div class = "img_box">
+          <img src = "img/swiper_6.jpg">
+        </div>
+    </div>
+    <div class = "swiper-slide">
+      <div class = "img_box">
+        <img src = "img/swiper_52.png">
+      </div>
+  </div>
+        </div>
+        <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript">
+    var swiper = new Swiper(".card_slider", {
+        slidesPerView: 3,
+        loop:true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            // spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            // spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            // spaceBetween: 50,
+          },
+        },
+      });
+  </script>
+  <!-- Service Section -->
+
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container2">
+      <div class="projects-header">
+        <h1 class="section-title">Our <span>work</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <div class="containerx containerx1">
+              <div class="image-containerx">
+                  <img class="image-beforex slider-imagex" src="img/1aaa.png">
+                  <img class="image-afterx" src="img/1bbb.png">
+              </div>
+              <input class="sliderx sliderx1 slider-imagex" type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown">
+              <div class="slider-linex">
+  
+              </div>
+              <div class="slider-buttonx" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+              </div>
+              <script type="text/javascript">
+                  const containerx1 = document.querySelector('.containerx1');
+                  document.querySelector('.sliderx1').addEventListener('input',(e)=>{
+                  containerx1.style.setProperty('--position',`${e.target.value}%`) ;
+                  })
+  
+              </script>
+          </div> </div>
+          <div class="project-img">
+            <h1>Image processing</h1>
+            <!-- <h2>Banks can't Always escape using Technical difficulties</h2> -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <div class="containerx containerx5">
+              <div class="image-containerx">
+                  <img class="image-beforex slider-imagex" src="img/2aaa.png">
+                  <img class="image-afterx" src="img/2bbb.png">
+              </div>
+              <input class="sliderx sliderx5 slider-imagex" type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown">
+              <div class="slider-linex">
+  
+              </div>
+              <div class="slider-buttonx" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+              </div>
+              <script type="text/javascript">
+                  const containerx5 = document.querySelector('.containerx5');
+                  document.querySelector('.sliderx5').addEventListener('input',(e)=>{
+                  containerx5.style.setProperty('--position',`${e.target.value}%`) ;
+                  })
+  
+              </script>
+          </div> </div>
+          <div class="project-img">
+            <h1>Image processing</h1>
+            <!-- <h2>Banks can't Always escape using Technical difficulties</h2> -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+            </p>
+          
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <div class="containerx containerx2">
+              <div class="image-containerx">
+                  <img class="image-beforex slider-imagex" src="img/slide-3.png">
+                  <img class="image-afterx" src="img/slide-5.png">
+              </div>
+              <input class="sliderx sliderx3 slider-imagex" type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown">
+              <div class="slider-linex">
+  
+              </div>
+              <div class="slider-buttonx" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+              </div>
+              <script type="text/javascript">
+                  const containerx2 = document.querySelector('.containerx2');
+                  document.querySelector('.sliderx3').addEventListener('input',(e)=>{
+                  containerx2.style.setProperty('--position',`${e.target.value}%`) ;
+                  })
+  
+              </script>
+          </div>   </div>
+          <div class="project-img">
+             <h1>Sensor work</h1>
+            <!-- <h2>Not All Free Items Are Welcome</h2> -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <div class="containerx containerx3">
+              <div class="image-containerx">
+                  <img class="image-beforex slider-imagex" src="img/slide-6.png">
+                  <img class="image-afterx" src="img/slide-7.png">
+              </div>
+              <input class="sliderx sliderx4 slider-imagex" type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown">
+              <div class="slider-linex">
+  
+              </div>
+              <div class="slider-buttonx" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+              </div>
+              <script type="text/javascript">
+                  const containerx3 = document.querySelector('.containerx3');
+                  document.querySelector('.sliderx4').addEventListener('input',(e)=>{
+                  containerx3.style.setProperty('--position',`${e.target.value}%`) ;
+                  })
+  
+              </script>
+          </div></div>
+          <div class="project-img">
+            <h1>Sensor work</h1>
+            <!-- <h2>No MRP at All on the Product?</h2> -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </p>
+          </div>
+        </div>
+        <!-- <div class="project-item">
+          <div class="project-info">
+            <h1>Akash Kumar vs. Pengiuin Books India Pvt.Ltd</h1>
+            <h2>No MRP at All on the Product?</h2>
+            <p>Baglekar Akash Kumar, a 19-year-old got a book and ₹12,500 because of the book. No  MRP was mentioned.He browsed and sw the book was sold at different price.So he files a case aganist Pengiuin Books India Pvt.Ltd<br>
+            Court Decision: The court held that not publishing MRP on the product without a valid reason is ‘unfair trade practice’.The publishers were asked to print the retail price on the book and Akash was awarded ₹10,000 as compensation and ₹2,500 as costs.  </p>
+          </div>
+          <div class="project-img">
+            <img src="./img/photo4.jpg" alt="img">
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container2">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/about_us.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>us</span></h1>
+        <h2>RVCE and WIRIN Collaboration</h2>
+        <p>WIRIN is an acronym for the Wipro and IISc Innovation Network.  
+          This dataset is part of the autonomous car project, which is one of the projects in the WIRIN network. 
+          The Autonomous Car is an institutional level project.
+          Its participants include Wipro, Indian Institute of Science (IISc )and the RV College of Engineering&reg;(RVCE), Bangalore, in a  technical capacity. 
+          National Institute of Design (NID) is offering website design support. 
+          The project staff includes undergraduate students, Masters students, professors, consultants and 
+          companies associated with autonomous car development & technologies related to it.
+          Bangalore has been and continues to be in the state of  transportation infrastructure growth. The WIRIN dataset has extensive coverage of numerous traffic scenarios encountered within the Bangalore urban area.
+
+WIRIN dataset comprises over 2000 semantic and point cloud images each, and 29 dataset classes. These cover the roadway, traffic conditions and vehicles frequently encountered in Bangalore’s urban traffic environment and its outskirts. The dataset has been collected empirically and continues to be expanded. The car drives through traffic and captures the video using a camera attached to the front of the car.
+
+The WIRIN dataset is a Fine Type dataset. This means that each class delineates boundaries with pixel-level precision. It is a collection of images to be used for training an autonomous car.
+</p>
+     <pre> <p><a href="https://docs.google.com/document/d/1EJlkxEllP2Xn_U6OZWjRUSxULB77M4xt4JRkkfniro8/edit?usp=sharing" target = "_blank" class="cta">Terms and conditions</a>  <a href="https://docs.google.com/document/d/1Oh2g50tcgIFOVc85jfqQmcHLMD9ecF_DIDX6hFZc_U0/edit?usp=sharing" target = "_blank" class="cta">Privacy policy</a></p>  </pre>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container2">
+      <div class="brand">
+        <h1><span>O</span>ur <span>T</span>eam</h1>
+      </div>
+      <h2></h2>
+      <br>
+      
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://rvce.edu.in"><img src="img/rv_trans.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.wipro.com"><img src="img/wipro_trans.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://iisc.ac.in"><img src="img/IISC-removebg-preview.png" /></a>
+        </div>
+        <!-- <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div> -->
+      </div>
+      <!-- <p>Copyright © 2022 LIKITHA. All rights reserved</p> -->
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
